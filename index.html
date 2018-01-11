@@ -68,13 +68,13 @@
                 <li><a href="Jeffrey%20Meng%20(312D0A19)%20–%20Public.txt" download>Download Public Key(.txt)</a></li>
                 <li><a href="Jeffrey%20Meng%20(312D0A19)%20–%20Public.txt">View Public Key(.txt)</a></li>
                 
-                <li><a class="clip" data-clipboard-target="#keytext"data-toggle="collapse" href="#key" role="button" aria-expanded="false" aria-controls="key">Copy Public Key(to clipboard)</a></li>
-                <li><a data-toggle="collapse" href="#key" role="button" aria-expanded="false" aria-controls="key">
-                    View Public Key(On this page)
+                <li><a class="clip" data-clipboard-target="#keytext" >Copy Public Key(to clipboard)</a></li>
+                <li><a data-toggle="collapse" href="#key" role="button" aria-expanded="false" aria-controls="key" id="view-key">
+                    Show Public Key(On this page)
                   </a></li>
             </ul>
 
-            <div class="collapse" id="key">
+            <div class="collapse well" id="key">
                 
                     <pre id="keytext">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -211,7 +211,15 @@ Here's a better idea: start intercepting the spy's communications and feed him a
     <script>
     /* global Clipboard */
         new Clipboard('.clip');
-
+        var keyVisible = false;
+        $("#view-key").click(function() {
+            keyVisible = !keyVisible;
+            if (keyVisible) {
+                $("#view-key").html("Hide Public Key(On this page)");
+            } else {
+                $("#view-key").html("Show Public Key(On this page)");
+            }
+        });
     </script>
 </body>
 
