@@ -13,7 +13,6 @@
 
         html,
         body {
-           
             margin: 0px;
             padding: 0px;
             min-height: 100%;
@@ -21,7 +20,6 @@
         }
 
         .container {
-            margin-top:20px;
             min-height: 100%;
             height: auto !important;
             margin-bottom: -50px;
@@ -54,23 +52,25 @@
 <body>
     <div class="container">
         <div class="col-lg-12">
-            <h1>Jeffrey Meng - PGP(Public Key)</h1>
+            <h1>Jeffrey Meng - PGP Public Key and Basic Guide</h1>
             <p class="text-muted">Public key for Jeffrey Meng</p>
             <hr>
-            <p>I(Jeffrey Meng) use pgp for better data security. This page serves a few purposes: </p>
+            <p>I (Jeffrey Meng) use pgp for better data security. This page serves a few purposes: </p>
             <ol type="1">
                 <li><a href="#keys">Post the public key for Jeffrey Meng, and relate it to this website.</a></li>
                 <li><a href="#what">What PGP is and why people use PGP</a></li>
                 <li><a href="#how">Explain how to use PGP</a></li>
             </ol>
+            <hr>
             <a name="keys"></a>
             <h2>PGP Public Key Block</h2>
+            <p><b>Fingerprint (Match this to the finger print of the key below to ensure that the key was copyied correctly): </b><code>BB73 731A 1EE3 6BEA B5C5  616E DDFB 4744 312D 0A19</code> </p>
             <ul>
-                <li><a href="Jeffrey%20Meng%20(312D0A19)%20–%20Public.asc" download>Download Public Key (.asc) - Recommended</a></li>
-                <li><a href="Jeffrey%20Meng%20(312D0A19)%20–%20Public.txt" download>Download Public Key (.txt)</a></li>
-                <li><a href="Jeffrey%20Meng%20(312D0A19)%20–%20Public.txt">View Public Key (.txt)</a></li>
+                <li><b><a href="Jeffrey%20Meng%20(312D0A19)%20–%20Public.asc" download>Download Public Key (.asc, for direct importing into your keychain program) - Recommended</a></b></li>
+                <li><a href="Jeffrey%20Meng%20(312D0A19)%20–%20Public.txt" download>Download Public Key (.txt, for storage and import in a natively readable format)</a></li>
+                <li><a href="Jeffrey%20Meng%20(312D0A19)%20–%20Public.txt">View Public Key (.txt, on your browser)</a></li>
 
-                <li><a class="clip" data-clipboard-target="#keytext" href="#">Copy Public Key( to clipboard)</a></li>
+                <li><a class="clip" data-clipboard-target="#keytext" href="#">Copy Public Key (to clipboard, from public key showable below)</a></li>
                 <li><a data-toggle="collapse" href="#key" role="button" aria-expanded="false" aria-controls="key" id="view-key">
                     Show Public Key (On this page)
                   </a></li>
@@ -204,7 +204,7 @@ WFTLrXN/od82JAv6JQ==
             </div>
             <a name="how"></a>
             <h2>How do I use PGP?</h2>
-            <p>I highly recommend using GnuPGP, a complete and free implementation of the open pgp standard. (Rest comming soon.)</p>
+            <p>I highly recommend using GnuPGP, a complete and free implementation of the open pgp standard. </p>
 
         </div>
     </div>
@@ -218,7 +218,7 @@ WFTLrXN/od82JAv6JQ==
     <script src="https://assets.jeffkmeng.com/bootstrap/4.0.0-beta/js/bootstrap.bundle.min.js"></script>
     <script src="/js/clipboard.min.js"></script>
     <script>
-        /* global Clipboard */
+        /* global Clipboard $ */
         new Clipboard('.clip');
         var keyVisible = false;
         $("#view-key").click(function() {
@@ -232,8 +232,8 @@ WFTLrXN/od82JAv6JQ==
         });
         var storyVisible = false;
         $("#story-show").click(function() {
-            keyVisible = !keyVisible;
-            if (keyVisible) {
+            storyVisible = !storyVisible;
+            if (storyVisible) {
                 $("#story-show").html("This story explans PGP pretty well(click to Hide)");
             }
             else {
