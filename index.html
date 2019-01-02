@@ -142,7 +142,7 @@ WFTLrXN/od82JAv6JQ==
                 texts, e-mails, files, directories and whole disk partitions and to increase the security of e-mail communications. PGP and similar software follow the OpenPGP standard (<a href="http://tools.ietf.org/html/rfc4880">RFC 4880</a>) for encrypting
                 and decrypting data.</p>
             <a data-toggle="collapse" href="#story" role="button" aria-expanded="false" aria-controls="story" id="story-show">
-                    This story explans PGP pretty well(click to Show)
+                    This story explains PGP pretty well (click to Show)
                   </a>
             <div class="collapse" id="story">
                 <div class="card">
@@ -204,7 +204,7 @@ WFTLrXN/od82JAv6JQ==
             </div>
             <a name="how"></a>
             <h2>How do I use PGP?</h2>
-            <p>I highly recommend using <a href="https://www.gnupg.org/download/index.html">GnuPG</a>, a complete and free implementation of the open pgp standard. </p>
+            <p>I highly recommend using <a href="https://www.gnupg.org/download/index.html">GnuPG</a>, a complete and free implementation of the open PGP standard. </p>
 
         </div>
     </div>
@@ -230,14 +230,13 @@ WFTLrXN/od82JAv6JQ==
                 $("#view-key").html("Show Public Key(On this page)");
             }
         });
-        var storyVisible = false;
         $("#story-show").click(function() {
-            storyVisible = !storyVisible;
-            if (storyVisible) {
-                $("#story-show").html("This story explans PGP pretty well(click to Hide)");
+
+            if ($("#story").hasClass("show")) {
+                $("#story-show").html("This story explains PGP pretty well(click to Hide)");
             }
             else {
-                $("#story-show").html("This story explans PGP pretty well(click to Show)");
+                $("#story-show").html("This story explains PGP pretty well(click to Show)");
             }
         });
     </script>
