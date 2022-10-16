@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -7,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Jeffrey Meng">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jeffkmeng.com/library/bootstrap/4.2.1/css/bootstrap.min.css">
-	<title>Jeffrey PGP</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jeffkmeng.com/library/bootstrap/4.1.3/css/bootstrap.min.css">
+	<title>Jeffrey's PGP Keys</title>
 	<style>
 		/* https://stackoverflow.com/a/3525675/5511561 */
 
@@ -19,14 +18,7 @@
 			min-height: 100%;
 			height: 100%;
 		}
-		#guide-box li {
-			margin-top:10px;
-			margin-bottom:10px;
-		}
 
-		h2, h3 {
-			margin-top:30px;
-		}
 		.container {
 			min-height: 100%;
 			height: auto !important;
@@ -41,7 +33,14 @@
 			/* the footer's total height */
 		}
 
+		#guide-box li {
+			margin-top:10px;
+			margin-bottom:10px;
+		}
 
+		h2, h3, h4 {
+			margin-top:30px;
+		}
 
 		.footer {
 			height: 50px;
@@ -51,7 +50,7 @@
 		.footer-content {
 
 			height: 32px;
-			/* height + top/bottom paddding + top/bottom border must add up to footer height */
+			/* height + top/bottom padding + top/bottom border must add up to footer height */
 			padding: 8px;
 		}
 	</style>
@@ -59,76 +58,135 @@
 
 <body>
 <div class="container">
-	<div class="col-lg-12">
-		<h1>Basic Guide to PGP</h1>
-		<p class="text-muted">Public key for Jeffrey Meng and how to get started with PGP</p>
+	<div class="col-lg-12 pt-3">
+		<h1>Jeffrey's PGP Keys</h1>
+		<p>I use pgp for better data security and to protect privacy. This site exists to help distribute my public key, and to associate my public/private keypair with the jeffkmeng.com domain.</p>
 		<hr>
-		<p>I use pgp for better data security and to protect privacy. This page serves a few purposes: </p>
-		<ol type="1">
-			<li><a href="#pgp-public-key">Post the public key for Jeffrey Meng, and relate it to this website.</a></li>
-			<li><a href="#what-is-pgp-why-do-people-use-it">Give a brief overview of what PGP is and why people use PGP</a></li>
-			<li><a href="#how-do-i-use-pgp">Explain how to use PGP</a></li>
-		</ol>
-		<hr>
+		<h4>My Public Key:</h4>
+		<ul>
+			<li><b><a href="Jeffrey%20Meng%20(312D0A19)%20%E2%80%93%20Public.asc">Download .asc file (for direct importing into your keychain program)</a></b></li>
+			<li>
+				<a href="#" onclick="copyKey()">Copy to clipboard</a>
+			</li>
+			<li>
+				<a href="Jeffrey%20Meng%20(312D0A19)%20%E2%80%93%20Public.txt" target="_blank">View .txt file on your browser</a>
+			</li>
+		</ul>
+		<p><b>Fingerprint - Match this to the fingerprint of the key after you import it to ensure that the key was copied correctly:</b><br>
+			<code>BB73 731A 1EE3 6BEA B5C5 616E DDFB 4744 312D 0A19</code></p>
 
-		<h2>PGP Public Key</h2>
-
-		<p>The following text is signed to prove that Jeffrey Meng is the operator of this site:</p>
-		<a data-toggle="collapse" href="#operatorProof" aria-expanded="false" aria-controls="key" id="view-operatorProof">
-			Click to toggle visibility
-		</a>
+		<h4>Proof that this website is associated with this key</h4>
+		<p>The following text is signed to prove that Jeffrey Meng is the operator of this site. The fact that the key is on this site proves that the key is Jeffrey Meng's.</p>
+		<a aria-controls="key" aria-expanded="false" data-toggle="collapse" href="#operatorProof" id="view-operatorProof">Click to toggle visibility</a>
 		<div class="card collapse" id="operatorProof">
 			<div class="card-body">
-                    <pre>
+					<pre>
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
-
 </pre>
-				<p>
-					I am Jeffrey Meng, and I am the operator of pgp.jeffkmeng.com, and jeffkmeng.com as of 1/9/2018. You can assume that I will update this signed message at least once a year, so if I haven't you should attempt to contact me before sending private encrypted information. My email is jeffkmeng@gmail.com. To ensure that the key you are copying belongs to me and was copied correctly, verify it with this fingerprint: BB73 731A 1EE3 6BEA B5C5  616E DDFB 4744 312D 0A19.
-				</p>
+				<p>I am Jeffrey Meng, and I am the operator of pgp.jeffkmeng.com (as well as the root jeffkmeng.com domain) as of October 16, 2022. You can assume that I will update this signed message approximately least once a year. To ensure that the key you are copying belongs to me and was copied correctly, verify it with this fingerprint: BB73 731A 1EE3 6BEA B5C5 616E DDFB 4744 312D 0A19.</p>
 				<pre>
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEu3NzGh7ja+q1xWFu3ftHRDEtChkFAlw2sAkACgkQ3ftHRDEt
-ChkRvA//QS34K8H1cMhJxAOKHCsnzKm3BWHOAChTomfMkDk9TaLo8Y01O7ag5qdO
-LHYHQhaHpXr69UcH7A7vIv+nyTVKUFWhMsrm6l4NdqscVytg9SkuMGV4SXBXAVsF
-S6/gJ+g78TBFAd3MvFUWr3AE5rSdy+nQvNyymi8oXRbNrM3AjLfHDi88f7XhtTHg
-IJVj1lcyAce20crvTRDBuhEZV4Xgz8G/Bl2/yQ03Q3y4ZfY+Pq3xlrQIlV3BB3YN
-5/8vAulmWVnmMeDoq+GitivY5rjzzTN08YBIyyxsQiV5TOwYNWmC2VMNUDP3joRK
-u3ADlsUSceGKnd0ENPKeav6yT0YcC9lWAHF4e+wcBWwFfP82zrNKHitmRHZEvuUw
-uv426p7V+41BXBAlJRGHb/54Yc9OulQ8k//x09LOedFEUMyhBsg1nq0WqsfkbbOV
-tTSo11XYyfInQ6sdvNXEUG5AJzsiPK3MIB7RR0tkxFLSWoJz9W23W+PtzYEqxDFY
-K/sTs67jGgBHjFJB2KwUCzSgmW2oWh0DenHJKVonkALIlCoV6xiP8b2kAqduvJ0+
-aMFjsbE0u63GvgJWaBEerMk0jttBnOtXkfkjeP6qY8j8PwR4/ozPSXnIsPPoU5rC
-ZdqCydjDZ2B9K7TyCxzYoVozFVS+ei3NzvxUthQzxO+ITEZHU8E=
-=HfB5
+iQIzBAEBCAAdFiEEu3NzGh7ja+q1xWFu3ftHRDEtChkFAmNLtiIACgkQ3ftHRDEt
+ChlKBw/+M9GvVJeW9BJ1PMBYXJRZFUjmKssOoUB/k0EnRTpZALlrz669alJxOVME
+o9q8QPIA0SQX9thuqV+73ZC5uGoQQsG8nMca2DA46/oXdMzSaxa2PGtWVMrsaRB+
+bYi62+S0espvEMSlEFcF4tS8p6tgtH8hIQmsJ0lkOynO7sOGb+Yo1/Py6uvaieYF
+W+fih5g/C7VgcgVpbdpxPlpFY7rndsKQYQ/6MQq3bHiNq6ktowj+3iHMmsJzSHC7
+3l6rA2sA0qLqWdZX6JOY3UfocZhnwBLK5rb56sLWFPzrCCEG6MV999Ew+SItvagJ
+2FJrlVvocLfst6eVKwGEY6egz2PJW1awHgy+uKuM6gV/8xqIjT/mCnku01OCxq6E
+S+x2bO67mskOnaR/tI4L1EpWTVEOSLscT//Cm23ydluvgFq6kTdYbR0IXUwV5san
+CW+canTKeLRpkRHNGzqw2UhpLcf8ezUhKFuOZwILZ6584YU2c0T6dxseleYMcYrY
+fSp/vXsSnJx8/JY7KYwhPbGOwaOxmidAiu7PHa6H3APrV+z23ErtHrwmBvUtuYlo
+5gQ/OAP/N+Y/3Cc03j+D5l/en2lM26F3rb8uVnWFzaNzTMFV6klxbkUmLIHZBM6N
+dSqJ+PlGg0ecOesqu88tXWQvxd5hkmfNDMGcb5k1fe6905pXLcE=
+=vYdq
 -----END PGP SIGNATURE-----
                     </pre>
-				<p><a href="gpg-verification.asc" target="_blank" download>You may also download the .asc file to automatically verify with GPG Suite.</a> (<a href="gpg-verification.txt" target="_blank">View .txt file Instead</a>)</p>
+				<p><a href="gpg-verification.asc" target="_blank">Download the signed .asc file to easily verify this message.</a> (<a href="gpg-verification.asc" target="_blank">View .txt file Instead</a>)</p>
 			</div>
 		</div>
-		<br>
-		<br>
-		<p><b>Fingerprint - Match this to the fingerprint of the key after you import it to ensure that the key was copied correctly: </b><br><code>BB73 731A 1EE3 6BEA B5C5  616E DDFB 4744 312D 0A19</code> </p>
-		<ul>
-			<li><b><a href="Jeffrey%20Meng%20(312D0A19)%20–%20Public.asc" download>Download Public Key (.asc, for direct importing into your keychain program) - Recommended</a></b></li>
-			<li><a href="Jeffrey%20Meng%20(312D0A19)%20–%20Public.txt" download>Download Public Key (.txt, for storage and import in a natively readable format)</a></li>
-			<li><a href="Jeffrey%20Meng%20(312D0A19)%20–%20Public.txt" target="_blank">View Public Key (.txt, on your browser)</a></li>
-			<li><a href="https://pgp.mit.edu/pks/lookup?op=get&search=0xDDFB4744312D0A19" target="_blank">View public key (MIT Key ServerConnection)</a></li>
-			<li><a data-toggle="collapse" href="#key" role="button" aria-expanded="false" aria-controls="key" id="view-key">
-				View public key on this page (click to toggle visibility)
-			</a></li>
-		</ul>
-
-		<div class="collapse" id="key">
+				<h4>What is PGP? Why do people use it?</h4>
+				<blockquote class="blockquote text-center">
+					<p class="mb-0">"Arguing that you don't care about the right to privacy because you have nothing to hide, is no different than saying you don't care about free speech because you have nothing to say."</p>
+					<footer class="blockquote-footer">
+						Edward Snowden
+					</footer>
+				</blockquote>
+		<p>PGP, which stands for <i>Pretty Good Privacy</i>, is a data encryption and decryption standard which provides cryptographic privacy and authentication for data communication. PGP is often used for signing, encrypting, and decrypting texts, e-mails, files, directories and whole disk partitions and to increase the security of e-mail communications.</p><a aria-controls="story" aria-expanded="false" data-toggle="collapse" href="#story" id="story-show" role="button">This story explains PGP pretty well (click to toggle visibility)</a>
+		<div class="collapse mb-0" id="story">
 			<div class="card">
 				<div class="card-body">
-					<button class="clip btn btn-block btn-primary" data-clipboard-target="#keytext">Copy to clipboard</button>
+					<p>(excerpt from Little Brother, a free novel by Cory Doctorow)<br>
+						<br>
+						<br>
+						<br>
+						"What would you do if you found out you had a spy in your midst? You could denounce him, put him up against the wall and take him out. But then you might end up with another spy in your midst, and the new spy would be more careful than the last one and maybe not get caught quite so readily. Here's a better idea: start intercepting the spy's communications and feed him and his masters misinformation. Say his masters instruct him to gather information on your movements. Let him follow you around and take all the notes he wants, but steam open the envelopes that he sends back to HQ and replace his account of your movements with a fictitious one. If you want, you can make him seem erratic and unreliable so they get rid of him. You can manufacture crises that might make one side or the other reveal the identities of other spies. In short, you own them.<br>
+						<br>
+						This is called the man-in-the-middle attack and if you think about it, it's pretty scary. Someone who man-in-the-middles your communications can trick you in any of a thousand ways.<br>
+						<br>
+						Of course, there's a great way to get around the man-in-the-middle attack: use crypto. With crypto, it doesn't matter if the enemy can see your messages, because he can't decipher them, change them, and re-send them. That's one of the main reasons to use crypto.<br>
+						<br>
+						But remember: for crypto to work, you need to have keys for the people you want to talk to. You and your partner need to share a secret or two, some keys that you can use to encrypt and decrypt your messages so that men-in-the-middle get locked out.<br>
+						<br>
+						That's where the idea of public keys comes in. This is a little hairy, but it's so unbelievably elegant too.<br>
+						<br>
+						In public key crypto, each user gets two keys. They're long strings of mathematical gibberish, and they have an almost magic property. Whatever you scramble with one key, the other will unlock, and vice-versa. What's more, they're the only keys that can do this -- if you can unscramble a message with one key, you know it was scrambled with the other (and vice-versa).<br>
+						<br>
+						So you take either one of these keys (it doesn't matter which one) and you just publish it. You make it a total non-secret. You want anyone in the world to know what it is. For obvious reasons, they call this your "public key."<br>
+						<br>
+						The other key, you hide in the darkest reaches of your mind. You protect it with your life. You never let anyone ever know what it is. That's called your "private key." (Duh.)<br>
+						<br>
+						Now say you're a spy and you want to talk with your bosses. Their public key is known by everyone. Your public key is known by everyone. No one knows your private key but you. No one knows their private key but them.<br>
+						<br>
+						You want to send them a message. First, you encrypt it with your private key. You could just send that message along, and it would work pretty well, since they would know when the message arrived that it came from you. How? Because if they can decrypt it with your public key, it can only have been encrypted with your private key. This is the equivalent of putting your seal or signature on the bottom of a message. It says, "I wrote this, and no one else. No one could have tampered with it or changed it."<br>
+						<br>
+						Unfortunately, this won't actually keep your message a secret. That's because your public key is really well known (it has to be, or you'll be limited to sending messages to those few people who have your public key). Anyone who intercepts the message can read it. They can't change it and make it seem like it came from you, but if you don't want people to know what you're saying, you need a better solution.<br>
+						<br>
+						So instead of just encrypting the message with your private key, you also encrypt it with your boss's public key. Now it's been locked twice. The first lock -- the boss's public key -- only comes off when combined with your boss's private key. The second lock -- your private key -- only comes off with your public key. When your bosses receive the message, they unlock it with both keys and now they know for sure that: a) you wrote it and b) only they can read it.<br>
+						<br>
+						It's very cool. The day I discovered it, Darryl and I immediately exchanged keys and spent months cackling and rubbing our hands as we exchanged our military-grade secret messages about where to meet after school and whether Van would ever notice him.<br>
+						<br>
+						But if you want to understand security, you need to consider the most paranoid possibilities. Like, what if I tricked you into thinking that my public key was your boss's public key? You'd encrypt the message with your private key and my public key. I'd decrypt it, read it, re-encrypt it with your boss's real public key and send it on. As far as your boss knows, no one but you could have written the message and no one but him could have read it.<br>
+						<br>
+						And I get to sit in the middle, like a fat spider in a web, and all your secrets belong to me.<br>
+						<br>
+						Now, the easiest way to fix this is to really widely advertise your public key. If it's really easy for anyone to know what your real key is, man-in-the-middle gets harder and harder. But you know what? Making things well-known is just as hard as keeping them secret. Think about it -- how many billions of dollars are spent on shampoo ads and other crap, just to make sure that as many people know about something that some advertiser wants them to know?<br>
+						<br>
+						There's a cheaper way of fixing man-in-the-middle: the web of trust. Say that before you leave HQ, you and your bosses sit down over coffee and actually tell each other your keys. No more man-in-the-middle! You're absolutely certain whose keys you have, because they were put into your own hands.<br>
+						<br>
+						So far, so good. But there's a natural limit to this: how many people can you physically meet with and swap keys? How many hours in the day do you want to devote to the equivalent of writing your own phone book? How many of those people are willing to devote that kind of time to you?<br>
+						<br>
+						Thinking about this like a phonebook helps. The world was once a place with a lot of phonebooks, and when you needed a number, you could look it up in the book. But for many of the numbers that you wanted to refer to on a given day, you would either know it by heart, or you'd be able to ask someone else. Even today, when I'm out with my cell-phone, I'll ask Jolu or Darryl if they have a number I'm looking for. It's faster and easier than looking it up online and they're more reliable, too. If Jolu has a number, I trust him, so I trust the number, too. That's called "transitive trust" -- trust that moves across the web of our relationships.<br>
+						<br>
+						A web of trust is a bigger version of this. Say I meet Jolu and get his key. I can put it on my "keyring" -- a list of keys that I've signed with my private key. That means you can unlock it with my public key and know for sure that me -- or someone with my key, anyway -- says that "this key belongs to this guy."<br>
+						<br>
+						So I hand you my keyring and provided that you trust me to have actually met and verified all the keys on it, you can take it and add it to your keyring. Now, you meet someone else and you hand the whole ring to him. Bigger and bigger the ring grows, and provided that you trust the next guy in the chain, and he trusts the next guy in his chain and so on, you're pretty secure.<br>
+						<br>
+						Which brings me to keysigning parties. These are exactly what they sound like: a party where everyone gets together and signs everyone else's keys. Darryl and I, when we traded keys, that was kind of a mini-keysigning party, one with only two sad and geeky attendees. But with more people, you create the seed of the web of trust, and the web can expand from there. As everyone on your keyring goes out into the world and meets more people, they can add more and more names to the ring. You don't have to meet the new people, just trust that the signed key you get from the people in your web is valid.<br>
+						<br>
+						So that's why web of trust and parties go together like peanut butter and chocolate.</p>
+					<p class="text-right">Excerpt from <a href="https://craphound.com/littlebrother/download/">Little Brother</a><br>
+						By Cory Doctorow<br>
+						<br>
+						<a href="/Cory%20Doctorow%20-%20Little%20Brother%20and%20Homeland.zip">I host a copy of this book on my website, if it's ever unavailable via the above link. The book was made available for free by the author.</a></p>
+				</div>
+			</div></div>
 
-					<hr>
-                        <pre id="keytext">
------BEGIN PGP PUBLIC KEY BLOCK-----
+
+
+	</div>
+</div>
+<div class="footer">
+	<div class="footer-content text-center">
+		Copyright &copy; 2018-2019 Jeffrey Meng
+	</div>
+</div>
+<script src="https://cdn.jeffkmeng.com/library/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdn.jeffkmeng.com/library/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script>
+	const key = `-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBFpW8lYBEAC7JO1e4+2Z49NiM4e3GlvC1ZWB6wNYeXv0Je7aK1ZTuOEjqCT4
 zU3vlfvTX6UqMQZRH6cgyY46+I9tFpTA0d7zeWQwgPIq2jkQEhF5nOOdXckPqqxg
@@ -142,19 +200,19 @@ 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
-BQkHhh+ABQsJCAcCBhUICQoLAgQWAgMBAh4BAheAFiEEu3NzGh7ja+q1xWFu3ftH
-RDEtChkFAlpW86MCGQEACgkQ3ftHRDEtChl7jg/+I6dn5WhHgXZQOlvuXSYwFqJ9
-7D+d/eWWPQz6JbWb1FRYCw4Xoq8JtoW4on06XvX8uJGZkiGtSKFgIobP/sWNfP7N
-c1Ykc+tvLbzy9FX0hppBg/i+T8McqjKD3BU2tVRo1ni7b+JHi6na4GwBLwgIDwDQ
-WS1xCyZVpeWhkZRi4p5psSbDnaKRKaLeo5obt1q0Bz3WsbSDPOVJCNIxtGIGB9DD
-6DS++rwi6VhtFk/HE0eTVxEiOWEO6Dx/kLLi+qCbOyjDkbdWdyBH7/0WVeGxVSYE
-UljbYVCsXlS/2Fik4LnsLraC3Phzzt0d5W5v/eS63BhtZcH63PzCG0MTQ9P6vKrU
-KcuFEfZK74pm5rf5HU8KJDo4tU+CPaDk/qPm228IBitA7Fg1jcK53Q9wGLnbI3Xq
-yaxRL5uUcbaXJXSEl+3XowOlhnWbcXd07erROXmE6eY4I2hYi85TMI0N5gcAn2A5
-M9H6RY7Ef0WsXIO0wikWUsHIzoAyT38AO5F5pVBbMaJdGMCvwGrImFZrmfRiIFoX
-RNRqeXt8c+IpfHlShobJngUDQJvNRrV2w4c6ThDa854gdsYoj24Y2GrCR0EFdln7
-1ZuYX6lOJsNoHuBI/9HLULSs6R1EG9jDbbASCbdNmQ7IVX/rO/uzFXF+pkbejEC0
-oCKy0y1q7BpWl4yil7a5Ag0EWlbyVgEQAMYRXU8coc44JDguDkBIUUDsOKUYneFh
+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
@@ -165,277 +223,24 @@ gv86rs67eFpYRBMQ9iF41KBjCt8LP+lT1rMusXb+zS5skLgY9c0FRVCYfUAYDyID
 dI5DsXZbWC1c7faqVgSDAYM4ikUdCp1cSBXPwEIXKyWwUD1jYbJxs+JbJ8SDDwP5
 phNs//Nln53FVTqf9L59MAtUd+LMSWe/1cKOeM+UuDt9u3FL3zjAeYgv86LtIF5X
 Gu45U4I1osr9Um5pxZOhb6L4WlUPCjVtC+vOJfU1ibsACLRu4hDHhW+Fq2eZN0Yg
-DsRMTdtlrcedABEBAAGJAjwEGAEIACYWIQS7c3MaHuNr6rXFYW7d+0dEMS0KGQUC
-WlbyVgIbDAUJB4YfgAAKCRDd+0dEMS0KGVm3D/4/Nlg2x28G3j2o1805DYufHHaV
-X+PQ6fGkERGzUM816eI9RxASWDxElPUm+cUrV/jNEvHa/uPWRSGA9Jea1UbnH1Xh
-4f1HlJ/k1WEhHH55VLmgTS/kKM07O7H/7hw/SL1nYOKC8flKm4ruGI7FGV7+15mg
-2/Xhfw5UoKTDD3Bk6xhBowhkTKqv6Vh9nvNw1VYC7pLRcWEbX3WSWr5GbjV7yUyx
-GFy8W0eRqLtxO+LaYWoudjWB4HMkyvViQ5MATdZZKS1rZO+d8JMkSX1XnAWTc5XC
-3wC+SGn5jBp0qTueFZLFN9FG/QgA5CX4h+2D2/bf5+AEEzp5hbRpp3cB5XEYDdAh
-Ki5JJX34kWqqbJWaNji4574t3NKAN60C/MvFVMOgDVGMocAS7uNpKOCX22x/NR0X
-RQTb1yrXVwoeVc46jFuMGKqpWTEA1Q5K9vaCCoKwpWze/N8xT2vJAEfXFkiqFxDE
-LwxXZsLDTv5pTYg1jhWmWOBY4wvAktK41jGlG/f0JJpvl/Urkmix4lhpy+lkJdVI
-v+h75ZPbMGSknMxwl8jEYM3tKnrGc3FeK0Mh7bd0nlxQv6l7eawleom7jncND1+n
-4JVOXgeCar2YvaXaP9qSW6+8is5D+TEQyNfwMyI4b88Z3F99wvd1V74bUGtZH7vW
-WFTLrXN/od82JAv6JQ==
-=s5Ej
+DsRMTdtlrcedABEBAAGJAjwEGAEIACYCGwwWIQS7c3MaHuNr6rXFYW7d+0dEMS0K
+GQUCYeJwFgUJC03kwAAKCRDd+0dEMS0KGcXnD/wJEst9MKGtHktj5KnKCHK+z4iM
+UKBMsJEKUL4AUVkih5vfBLRWJTgPaTYO9d64ZN+rTTnTip/5VD8X7JX89FjXeVFK
+QjOIB/IO2WUO/IvZqaVWqk38JMDuak1f2JmMDBNVdSIvdYszyMPfjs8jm/N4WeaB
+igs5mjylk2JIsbjAqDxqaphcL95IILRbQAEVJjX431YpJYeRoQXtF4EMEWPj+3ap
+9/i0nyB0qMbLiFjBLRx5hLX6n0ndxYNySFuKeK5POWI1n35Lg/poD3pPyEm2FvxJ
+trffPstLIFOQl52yEgasgJ041/mRnuIbM13nqyBXgGKKZYo2ZIvCRbjLoWf8R+Qs
+av/7JIs3LmuIm2+SQSj3HuxuCnRho+mOsKQwYRf8p4/EkvWWci+AjevzS4LWN0Sj
+pIlQlR1JzowPILppJcWFZwrT0V8N4XkGXgUhFSSiyAORER2EIAcQnjLddIqh9uzf
+nexoJZmPspLEZ8SDpquXpAvQugRx91uqAJ2iGQORQoqecdcFvQZTNM/mo+WMIgNX
+wjcvQhkrPOGncL0Pe7nYt5jPsjOvpVDwopBLG7UnMXuQN3EAlmpIG1Rjvcnihn7A
+cei1G4Ywd00+FpFv1NvalekLxkHDrqQ5McCzrMz+8UehI9TYeAIY/fhCL/P7v6Sq
+1QBbPnUJN9EjScNS+w==
+=weVi
 -----END PGP PUBLIC KEY BLOCK-----
-</pre>
-				</div>
-			</div>
-		</div>
-		<h2>What is PGP? Why do people use it?</h2>
-		<blockquote class="blockquote text-center">
-			<p class="mb-0">"Arguing that you don't care about the right to privacy
-				because you have nothing to hide, is no different than saying
-				you don't care about free speech because you have nothing to say."
-			</p>
-			<footer class="blockquote-footer">Edward Snowden</footer>
-		</blockquote>
-		<p>PGP, which stands for <b>Pretty Good Privacy</b>, is a data encryption and decryption standard which provides cryptographic privacy and authentication for data communication. PGP is often used for signing, encrypting, and decrypting
-			texts, e-mails, files, directories and whole disk partitions and to increase the security of e-mail communications.</p>
-
-
-
-		<a data-toggle="collapse" href="#story" role="button" aria-expanded="false" aria-controls="story" id="story-show">
-			This story explains PGP pretty well (click to toggle visibility)
-		</a>
-		<div class="collapse" id="story">
-			<div class="card">
-				<div class="card-body">
-					<p>
-						(excerpt from Little Brother, a free novel by Cory Doctorow)
-						<br><br><br><br> "What would you do if you found out you had a spy in your midst? You could denounce him, put him up against the wall and take him out. But then you might end up with another spy in your midst, and the
-						new spy would be more careful than the last one and maybe not get caught quite so readily. Here's a better idea: start intercepting the spy's communications and feed him and his masters misinformation. Say his masters instruct
-						him to gather information on your movements. Let him follow you around and take all the notes he wants, but steam open the envelopes that he sends back to HQ and replace his account of your movements with a fictitious one.
-						If you want, you can make him seem erratic and unreliable so they get rid of him. You can manufacture crises that might make one side or the other reveal the identities of other spies. In short, you own them.
-						<br><br> This is called the man-in-the-middle attack and if you think about it, it's pretty scary. Someone who man-in-the-middles your communications can trick you in any of a thousand ways.
-						<br><br> Of course, there's a great way to get around the man-in-the-middle attack: use crypto. With crypto, it doesn't matter if the enemy can see your messages, because he can't decipher them, change them, and re-send
-						them. That's one of the main reasons to use crypto.
-						<br><br> But remember: for crypto to work, you need to have keys for the people you want to talk to. You and your partner need to share a secret or two, some keys that you can use to encrypt and decrypt your messages
-						so that men-in-the-middle get locked out.
-						<br><br> That's where the idea of public keys comes in. This is a little hairy, but it's so unbelievably elegant too.
-						<br><br> In public key crypto, each user gets two keys. They're long strings of mathematical gibberish, and they have an almost magic property. Whatever you scramble with one key, the other will unlock, and vice-versa.
-						What's more, they're the only keys that can do this -- if you can unscramble a message with one key, you know it was scrambled with the other (and vice-versa).
-						<br><br> So you take either one of these keys (it doesn't matter which one) and you just publish it. You make it a total non-secret. You want anyone in the world to know what it is. For obvious reasons, they call this
-						your "public key."
-						<br><br> The other key, you hide in the darkest reaches of your mind. You protect it with your life. You never let anyone ever know what it is. That's called your "private key." (Duh.)
-						<br><br> Now say you're a spy and you want to talk with your bosses. Their public key is known by everyone. Your public key is known by everyone. No one knows your private key but you. No one knows their private key but
-						them.
-						<br><br> You want to send them a message. First, you encrypt it with your private key. You could just send that message along, and it would work pretty well, since they would know when the message arrived that it came
-						from you. How? Because if they can decrypt it with your public key, it can only have been encrypted with your private key. This is the equivalent of putting your seal or signature on the bottom of a message. It says, "I wrote
-						this, and no one else. No one could have tampered with it or changed it."
-						<br><br> Unfortunately, this won't actually keep your message a secret. That's because your public key is really well known (it has to be, or you'll be limited to sending messages to those few people who have your public
-						key). Anyone who intercepts the message can read it. They can't change it and make it seem like it came from you, but if you don't want people to know what you're saying, you need a better solution.
-						<br><br> So instead of just encrypting the message with your private key, you also encrypt it with your boss's public key. Now it's been locked twice. The first lock -- the boss's public key -- only comes off when combined
-						with your boss's private key. The second lock -- your private key -- only comes off with your public key. When your bosses receive the message, they unlock it with both keys and now they know for sure that: a) you wrote it
-						and b) only they can read it.
-						<br><br> It's very cool. The day I discovered it, Darryl and I immediately exchanged keys and spent months cackling and rubbing our hands as we exchanged our military-grade secret messages about where to meet after school
-						and whether Van would ever notice him.
-						<br><br> But if you want to understand security, you need to consider the most paranoid possibilities. Like, what if I tricked you into thinking that my public key was your boss's public key? You'd encrypt the message
-						with your private key and my public key. I'd decrypt it, read it, re-encrypt it with your boss's real public key and send it on. As far as your boss knows, no one but you could have written the message and no one but him could
-						have read it.
-						<br><br> And I get to sit in the middle, like a fat spider in a web, and all your secrets belong to me.
-						<br><br> Now, the easiest way to fix this is to really widely advertise your public key. If it's really easy for anyone to know what your real key is, man-in-the-middle gets harder and harder. But you know what? Making
-						things well-known is just as hard as keeping them secret. Think about it -- how many billions of dollars are spent on shampoo ads and other crap, just to make sure that as many people know about something that some advertiser
-						wants them to know?
-						<br><br> There's a cheaper way of fixing man-in-the-middle: the web of trust. Say that before you leave HQ, you and your bosses sit down over coffee and actually tell each other your keys. No more man-in-the-middle! You're
-						absolutely certain whose keys you have, because they were put into your own hands.
-						<br><br> So far, so good. But there's a natural limit to this: how many people can you physically meet with and swap keys? How many hours in the day do you want to devote to the equivalent of writing your own phone book?
-						How many of those people are willing to devote that kind of time to you?
-						<br><br> Thinking about this like a phonebook helps. The world was once a place with a lot of phonebooks, and when you needed a number, you could look it up in the book. But for many of the numbers that you wanted to
-						refer to on a given day, you would either know it by heart, or you'd be able to ask someone else. Even today, when I'm out with my cell-phone, I'll ask Jolu or Darryl if they have a number I'm looking for. It's faster and easier
-						than looking it up online and they're more reliable, too. If Jolu has a number, I trust him, so I trust the number, too. That's called "transitive trust" -- trust that moves across the web of our relationships.
-						<br><br> A web of trust is a bigger version of this. Say I meet Jolu and get his key. I can put it on my "keyring" -- a list of keys that I've signed with my private key. That means you can unlock it with my public key
-						and know for sure that me -- or someone with my key, anyway -- says that "this key belongs to this guy."
-						<br><br> So I hand you my keyring and provided that you trust me to have actually met and verified all the keys on it, you can take it and add it to your keyring. Now, you meet someone else and you hand the whole ring
-						to him. Bigger and bigger the ring grows, and provided that you trust the next guy in the chain, and he trusts the next guy in his chain and so on, you're pretty secure.
-						<br><br> Which brings me to keysigning parties. These are exactly what they sound like: a party where everyone gets together and signs everyone else's keys. Darryl and I, when we traded keys, that was kind of a mini-keysigning
-						party, one with only two sad and geeky attendees. But with more people, you create the seed of the web of trust, and the web can expand from there. As everyone on your keyring goes out into the world and meets more people,
-						they can add more and more names to the ring. You don't have to meet the new people, just trust that the signed key you get from the people in your web is valid.
-						<br><br> So that's why web of trust and parties go together like peanut butter and chocolate.
-					</p>
-					<p class="text-right">
-						Excerpt from <a href="https://craphound.com/littlebrother/download/">Little Brother</a><br>
-						By Cory Doctorow<br>
-						<br>
-						<a href="/Cory%20Doctorow%20-%20Little%20Brother%20and%20Homeland.zip">I host a copy of this book on my website, if it's ever unavailable via the above link.</a>
-					</p>
-				</div>
-			</div>
-		</div>
-		<h2>How do I use PGP?</h2>
-		<blockquote class="blockquote text-center">
-			<p class="mb-0">“Privacy isn’t about something to hide. Privacy is about something to protect.
-				And that’s who you are. That’s what you believe in. That’s who you want to become.
-				Privacy is the right to the self. Privacy is what gives you the ability to share
-				with the world who you are on your own terms.”
-			</p>
-			<footer class="blockquote-footer">Edward Snowden</footer>
-		</blockquote>
-
-		<br>
-		<div class="card">
-			<div class="card-header">
-				<div class="nav nav-tabs card-header-tabs" role="tablist">
-					<a class="nav-item nav-link active" id="guide-mac-tab" data-toggle="tab" href="#guide-mac" role="tab" aria-controls="guide-mac" aria-selected="true">Mac</a>
-					<a class="nav-item nav-link" id="guide-win-tab" data-toggle="tab" href="#guide-win" role="tab" aria-controls="guide-win" aria-selected="false">Windows</a>
-					<a class="nav-item nav-link" id="guide-linux-tab" data-toggle="tab" href="#guide-linux" role="tab" aria-controls="guide-linux" aria-selected="false">Linux</a>
-				</div>
-			</div>
-			<div class="card-body">
-				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane fade show active" id="guide-mac" role="tabpanel" aria-labelledby="guide-mac-tab">
-						<h4>Mac Setup</h4>
-						<ol type="1">
-							<li>
-								Download and install <a href="https://gpgtools.org">GPG Suite</a>.
-								GPG Suite is a implementation of the Open PGP standard for Mac.
-							</li>
-							<li>
-								Generate a new public/private key pair.
-								<ol type="a">
-									<li>Open the newly installed GPG Keychain application.</li>
-									<li>Click the <code>new</code> button in the top left corner.</li>
-									<li>Type in your name, email, and a secure password.
-										You can't change any of this after your key is created, so double check that everything is correct!
-									</li>
-									<li>
-										It will take a moment to generate the key, and in the meantime
-										it will ask you to randomly type, click, and move the mouse to generate entropy.
-									</li>
-								</ol>
-							</li>
-							<li>
-								GPG Keychain also sets commands in Mac System Preferences > Keyboard > Shortcuts > Services.
-								All the commands prefixed with Open PGP are set by GPG Keychain. You may want to disable some or all
-								of these commands.
-							</li>
-							<li>
-								(Optional) Share your key. You may choose any number of the below options:
-								<ol type="a">
-
-									<li>
-										Copy your public key to your clipboard by selecting the <code>copy</code> option in
-										the context (right click) when your public/private key pair is selected.
-									</li>
-									<li>
-										Export your public key by clicking the export button on the top of GPG Keychain.
-										<b>Do NOT select the <code>Include secret key in exposed file</code> option when
-											exporting your public key!</b>
-										This will generate a file in the selected directory that you can easily send to
-										others.
-									</li>
-									<li>
-										Upload your key to the default Key Servers by selecting the
-										<code>Send public key to key server</code> in the context (right click) menu
-										when your public/private key pair is selected.
-									</li>
-									<li>
-										Upload your key to the MIT Key ServerConnection. Follow the instructions for copying your key
-										to the clipboard (above), then paste it into the <code>submit a key</code> field in the
-										<a href="https://pgp.mit.edu">MIT Key ServerConnection</a>.
-									</li>
-									<li class="text-danger">
-										Export your private key. <b>Warning! NEVER share your PRIVATE key. Only do this
-										when you are backing up your key or using your key on multiple (non-public)
-										computers.</b> Click the export button in GPG Keychain, then check the checkbox
-										that says <code>Include secret key in exposed file</code>. This will generate
-										a file with both your public and private key, which you can import into GPG
-										Keychain on other computers. After importing your own key, open the details menu
-										(context menu) and set owner trust to ultimate (because you trust yourself).
-									</li>
-								</ol>
-							</li>
-						</ol>
-
-
-					</div>
-					<div class="tab-pane fade" id="guide-win" role="tabpanel" aria-labelledby="guide-win-tab">
-						<h4>Windows Setup</h4>
-						Windows setup instructions are coming soon!
-					</div>
-					<div class="tab-pane fade" id="guide-linux" role="tabpanel" aria-labelledby="guide-linux-tab">
-						<h4>Linux Setup</h4>
-						Linux setup instructions are coming soon!
-					</div>
-				</div>
-				<h4 class="pt-3">Use your new key</h4>
-				<ul>
-					<li>
-						Add it to your git workflow:<br>
-							Upload the key to github under
-								<a href="https://github.com/settings/keys" target="_blank">
-									Personal Settings > Keys
-								</a>.
-								Click the <code>New GPG key</code> button and paste your key (refer to copying your key to
-								your clipboard above).
-							<br><br>
-							Submit your key, to sign commits use the <code>-S</code>
-							flag each time you commit. Alternatively, you can set git to automatically
-							sign commits with the command <code>git config --global commit.gpgsign true</code>. Remove
-							the global flag if you only want to automatically sign commits in the repository at your
-							current path.
-					</li>
-					<li>
-						Use the keyboard shortcuts <kbd>&#8984;</kbd>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-
-
-
-
-	</div>
-</div>
-<div class="footer">
-	<div class="footer-content text-center">
-		Copyright &copy; 2018<script>(function(){const year = new Date().getFullYear();document.write(year>2018 ? "-" + year : "2019")})()</script> Jeffrey Meng
-	</div>
-</div>
-<script src="https://cdn.jeffkmeng.com/library/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdn.jeffkmeng.com/library/popperjs/1.14.6/popper.min.js"></script>
-<script src="https://cdn.jeffkmeng.com/library/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<script src="js/clipboard.min.js"></script>
-<script src="js/anchor.min.js"></script>
-<script>
-	/* global Clipboard $ */
-	new Clipboard('.clip');
-
-
-
-
-	anchors.options = {
-		placement: "left"
-	};
-	anchors.add("h2, h3");
-
-	if (getOS()) { // the os must be windows, mac, or linux, otherwise we default to mac
-
-		$("#guide-" + getOS() + "-tab").tab("show");
-	}
-
-	function getOS() {
-		var userAgent = window.navigator.userAgent,
-			platform = window.navigator.platform,
-			macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
-			windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
-			iosPlatforms = ['iPhone', 'iPad', 'iPod'],
-			os = null;
-
-		if (macosPlatforms.indexOf(platform) !== -1) {
-			os = "mac";
-		} else if (windowsPlatforms.indexOf(platform) !== -1) {
-			os = "win";
-		} else if (!os && /Linux/.test(platform)) {
-			os = "linux";
-		} else {
-			return false;
-		}
-
-		return os;
+`
+	function copyKey() {
+		navigator.clipboard.writeText(key)
 	}
 
 </script>
