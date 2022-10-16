@@ -1,4 +1,4 @@
-# Jeffrey's GPG Keys
+# Jeffrey's PGP Keys
 
 - [Public Key as .asc file](Jeffrey%20Meng%20(312D0A19)%20–%20Public.asc)
 - [Public Key as .txt file](Jeffrey%20Meng%20(312D0A19)%20–%20Public.txt)
