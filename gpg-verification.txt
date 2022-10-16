@@ -2,7 +2,6 @@
 Hash: SHA256
 
 I am Jeffrey Meng, and I am the operator of pgp.jeffkmeng.com (as well as the root jeffkmeng.com domain) as of October 16, 2022. You can assume that I will update this signed message approximately least once a year. To ensure that the key you are copying belongs to me and was copied correctly, verify it with this fingerprint: BB73 731A 1EE3 6BEA B5C5  616E DDFB 4744 312D 0A19.
-
 -----BEGIN PGP SIGNATURE-----
 
 iQIzBAEBCAAdFiEEu3NzGh7ja+q1xWFu3ftHRDEtChkFAmNLtiIACgkQ3ftHRDEt
